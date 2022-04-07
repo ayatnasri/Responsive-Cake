@@ -1,0 +1,474 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+/*----Header -------*/
+
+header{
+    background-image: url(imges/AdobeStock_362430384_Preview.jpeg);
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+.bigImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.boxbigImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 500px;
+    width: 50%;
+}
+h1{
+    font-size: 90px;
+    color: rgb(237, 156, 169);
+    padding: 30px;
+}
+.bigImg-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 20px;
+}
+.bigImg-btn button{
+    margin: 50px;
+    background-color: #80caed;
+    color: white;
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+}
+h2{
+    color: #80caed;
+    text-transform: capitalize;
+}
+/*---Contact information-------*/
+#outputContact{
+     display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.cakeCardContact{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    color:rebeccapurple;
+
+}
+#card-containerContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+#card-containerContact h2{
+    font-size:20px;
+    color: rebeccapurple;
+    text-transform: capitalize;
+}
+#card-containerContact span{
+    font-size:15px;
+    color: rgb(223, 87, 110);
+    text-transform: capitalize;
+}
+hr{
+   margin: 10px auto;
+    width: 200px;
+}
+
+/*---serch form-------*/
+.serach-form{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.serach-form input{
+    background-color: white;
+    color: rgb(201, 106, 122);
+    width: 220px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+}
+::placeholder{
+    padding: 30px;
+    text-align: center;
+}
+.serch{
+    padding: 30px;
+}
+
+/*---Main--- The Card Cake-------*/
+#output{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    width: 100%; 
+    
+}
+.card-img img{
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+}
+#card-container {
+    background-color: rgb(238, 213, 220);
+    box-shadow: 0px 2px 6px 2px #0002;
+    width: 340px;
+    height: 600px; 
+    margin-top: 3rem; 
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding-bottom: 10px;
+}
+#hidecakes {
+    display: none;
+}
+#hidecontact {
+    display: none;
+}
+#shiftli {
+    margin: 10px 20px;
+}
+
+.cakeCardRecept{
+    background-color: rgb(238, 213, 220);
+    box-shadow: 0px 2px 6px 2px #0002;
+    width:auto;
+    height:400px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+    margin: 80px;
+    
+}
+.card-img-recept img{
+    width: auto;
+    height: 400px;
+    float: left;
+}
+#card-container-recept{
+    float: right;
+}
+#card-container h3, h3 span{
+    font-size: 35px;
+    color:rgb(185, 88, 104);
+}
+
+h4 span{
+    font-size: 20px;
+    color:rgb(195, 155, 162);
+}
+#card-container h4, #card-container-recept h4{
+    color: rgb(120, 83, 89);
+    font-size: 18px;
+}
+
+#card-container-recept h3{
+    color: rgb(185, 88, 104);
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+/*..................Responsive  for tablet ( larger than 600px and less than 800px)................................................*/
+@media only screen and (min-width:600px) and (max-width:800px){
+    .boxbigImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8);
+        height: 300px;
+        width: 50%;
+        margin-top: 20px;
+    }
+    h1{
+        font-size: 40px;
+        color: rgb(237, 156, 169);
+        padding: 10px;
+    }
+    .bigImg-btn{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        padding-right: 20px;
+    }
+    .bigImg-btn button{
+        margin: 20px;
+        background-color: #80caed;
+        color: white;
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+        border-radius: 20px;
+        border: none;
+    }
+    h2{
+        color: #80caed;
+        text-transform: capitalize;
+        font-size: 15px;
+    }
+    /*---serch form-------*/
+    .serach-form{
+        padding-top: 10px;   
+    }
+    .serach-form input{
+        background-color: white;
+        color: rgb(201, 106, 122);
+        width: 140px;
+        height: 30px;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    ::placeholder{
+        padding: 2px;
+        text-align: center;
+    }
+    .cakeCardRecept{
+        width: 90%;
+        height: auto; 
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        margin-top: 10px;
+        padding: 0;
+        margin: 10px;
+    }
+    .card-img-recept img{
+        width: auto;
+        height: 250px;
+        padding: 0;
+        margin: 0;
+        object-fit: cover;
+    } 
+    #card-container h3, h3 span{
+        font-size: 20px;
+        color:rgb(185, 88, 104);
+    }
+    h4 span{
+        font-size: 15px;
+        color:rgb(195, 155, 162);
+    }
+    #card-container h4, #card-container-recept h4{
+        color: rgb(120, 83, 89);
+        font-size: 13px;
+    }
+    #card-container-recept h3{
+        color: rgb(185, 88, 104);
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    /*---Main--- The Card Cake-------*/
+    .card-img img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+    #card-container {
+        background-color: rgb(238, 213, 220);
+        box-shadow: 0px 2px 6px 2px #0002;
+        width: 250px;
+        height: 420px; 
+        margin-top: 3rem;
+    }
+}
+    
+
+/*..................Responsive for mobile phone ( less than 600px )................................................*/
+@media only screen and (max-width:600px){
+    header{
+        background-image: url(imges/10330-Honeycomb-cake.jpg);
+        background-size: cover;
+        height: auto;
+        width: 100%;
+    }
+    .bigImg{
+        height: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+    }
+    .boxbigImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8);
+        height: 200px;
+        width: 70%;
+    }
+    h1{
+        font-size: 30px;
+        color: rgb(230,153,1);
+        padding: 0 0 5px 0 ;
+    }
+    h2{
+        color: rgb(132,196,221);
+    }
+    .bigImg-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    .bigImg-btn button{
+        background-color: rgb(132,196,221);
+        color: rgb(121, 63, 5);
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+    .serach-form{
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .serach-form input{
+        width: 80px;
+        height: 20px;
+        font-size: 8px;
+        margin-top: 10px;
+        background-color: rgb(245,209,6);
+
+    }
+    ::placeholder{
+        padding: 0px;
+        text-align: center;
+    }
+    .serch{
+        padding: 5px;
+    }
+    h2{
+        font-size: 7px;
+        text-align: center;
+    }
+    .card-img img{
+        width: 350px;
+        height: 340px;
+        object-fit: cover;
+    }
+    #card-container {
+        background-color: rgb(234, 240, 243);
+        box-shadow: 0px 2px 6px 2px #0002;
+        width: 350px;
+        height: auto; 
+    }
+    /*---Contact information-------*/
+    #outputContact{
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        display: none;
+    
+    }
+    .cakeCardContact{
+        width: 300px;
+        height: auto;
+        color:rgb(132,196,221);
+
+    }
+    #card-containerContact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    #card-containerContact h2{
+        font-size:20px;
+        color: rgb(230,153,1);
+        margin-top: 5px;
+    }
+    hr{
+        margin-left: auto;
+        margin-right: auto;
+         width: 200px;
+     }
+    
+    /*---cake sort-------*/
+    #card-container h3, h3 span, #card-container-recept h3{
+        font-size: 30px;
+        color:rgb(230,153,1);
+    }
+    
+    h4 span,#card-containerContact span{
+        font-size: 20px;
+        color:rgb(245,209,6);
+    }
+    #card-container h4{
+        color: rgb(127,191,217);
+        font-size: 18px;
+    }
+    #card-container-recept h4{
+        color: rgb(88, 180, 216);
+        font-size: 15px;
+        font-weight: 400;
+    }
+     /*---cake recept-------*/
+    .cakeCardRecept{
+        background-color: rgb(234, 240, 243);
+        box-shadow: 0px 2px 6px 2px #0002;
+        width: 320px;
+        height: auto; 
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        margin-top: 10px;
+        padding: 0;
+
+    }
+    .card-img-recept img{
+        width: 320px;
+        height: 340px;
+        padding: 0;
+        margin: 0;
+        object-fit: cover;
+    }  
+}
